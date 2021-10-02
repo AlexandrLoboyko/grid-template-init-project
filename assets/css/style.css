@@ -1,4 +1,79 @@
-body {
-  background-color: blueviolet;
-  color: beige;
+*,
+* ::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: #637588;
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn {
+  background-color: slateblue;
+}
+
+/* HEADER */
+.header {
+  display: grid;
+  align-content: center;
+  position: relative;
+  background-color: #2d3651;
+  color: #ffffff;
+  min-height: 100vh;
+  background-image: url(../img/img-header.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content__container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-content__title {
+  margin: 0;
+}
+
+.header-content__actions {
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu {
+  position: absolute;
+  height: 10px;
+  z-index: 1;
+  background-color: seagreen;
+  top: 0;
+  left: 0;
+}
+
+.header-overlay {
+  background-color: #2d3651;
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
 }
