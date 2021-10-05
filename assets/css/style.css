@@ -9,6 +9,7 @@ html {
   color: #637588;
   font-size: 16px;
   overflow-y: scroll;
+  letter-spacing: 0.1em;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
   letter-spacing: 0.08em;
   font-weight: 300;
   text-align: center;
+  line-height: 1.2em;
 }
 
 a {
@@ -35,6 +37,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d66926;
 }
 
 /* HEADER */
@@ -64,7 +72,7 @@ a {
 }
 
 .header-content__title {
-  margin: 0 0 51px;
+  margin: 0 0 53px;
 }
 
 .header-content__actions {
@@ -82,14 +90,25 @@ a {
 }
 
 .header-menu__container {
-  display: flex;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
 .header-logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.22em;
 }
 .header-logo__link {
+  display: block;
+  padding: 20px 0;
 }
 .header-logo__accent {
+  display: inline-block;
+  padding: 14px 1px 13px 5px;
+  border: 3px solid #d53d27;
+  margin-right: 4px;
 }
 
 .header-navbar {
@@ -98,12 +117,27 @@ a {
   display: none;
 }
 .header-navbar__list {
+  margin: 0 -12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 .header-navbar__item {
 }
 .header-navbar__link {
+  display: block;
+  padding: 20px 10px;
+  font-size: 1.125rem;
+  transition: color 0.25s;
+  letter-spacing: 0.1em;
 }
 
+.header-navbar__link:hover,
+.header-navbar__link:focus {
+  color: #d66926;
+}
 .header-overlay {
   background-color: #2d3651;
   position: absolute;
