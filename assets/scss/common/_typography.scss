@@ -1,0 +1,26 @@
+*,
+* ::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: #637588;
+  font-size: 16px;
+  overflow-y: scroll;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
