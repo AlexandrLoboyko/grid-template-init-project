@@ -1,9 +1,11 @@
-.skills__container {
-  display: grid;
-  margin-bottom: 20px;
-}
+.skills {
+  &__container {
+    display: grid;
+    margin-bottom: 20px;
+  }
 
-.skills__actions {
-  display: flex;
-  justify-content: center;
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
 }

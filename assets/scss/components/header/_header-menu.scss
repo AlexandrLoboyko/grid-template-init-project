@@ -4,11 +4,11 @@
   top: 0;
   left: 0;
   right: 0;
-}
-
-.header-menu__container {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: auto 1fr;
-  align-items: center;
+  &__container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    @extend %container;
+  }
 }

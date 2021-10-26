@@ -396,6 +396,9 @@ a {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
+.btn:hover, .btn:focus {
+  background-color: #d66926;
+}
 
 .btn--light {
   background-color: rgba(255, 255, 255, 0.1);
@@ -407,11 +410,6 @@ a {
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #2d3651;
   min-width: 350px;
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: #d66926;
 }
 
 .header {
@@ -441,7 +439,6 @@ a {
   left: 0;
   right: 0;
 }
-
 .header-menu__container {
   display: grid;
   gap: 20px;
@@ -449,6 +446,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header-logo {
@@ -508,18 +509,6 @@ a {
   position: relative;
   z-index: 1;
 }
-
-.header-content__container,
-.header-menu__container {
-  max-width: 1340px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* .header-content__title {
- margin: 0 0 53px;
-} */
 .header-content__actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +517,12 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+}
+.header-content__container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .skills__container {
